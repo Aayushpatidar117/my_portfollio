@@ -4,7 +4,7 @@ import "./aboutme.css";
 import blobImg from "../../assets/Images/userAsset/blob_vector.png";
 import htmlImg from "../../assets/Images/stack/HTML.png";
 import cssImg from "../../assets/Images/stack/CSS.png";
-import javascriptImg from "../../assets/Images/stack/javascript.svg";
+import jsImg from "../../assets/Images/stack/Javascript.svg";
 import cImg from "../../assets/Images/stack/c.png";
 import cppImg from "../../assets/Images/stack/c++.png";
 import javaImg from "../../assets/Images/stack/java.png";
@@ -90,7 +90,7 @@ const AboutMe = () => {
             className="w-[50px] md:w-[80px] cursor-pointer hover:scale-125 transition-all duration-700"
           />
           <img
-            src={javascriptImg}
+            src={jsImg}
             className="w-[50px] md:w-[80px] cursor-pointer hover:scale-125 transition-all duration-700"
           />
           <img
