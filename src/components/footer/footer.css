@@ -1,0 +1,58 @@
+footer {
+  position: relative;
+  margin-top: -1px;
+  padding: 5rem;
+  background-color: #343d68;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-faded-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #535c87;
+  user-select: none;
+  font-size: 5rem;
+}
+
+.link-wrapper {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.link-wrapper div a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.6;
+}
+
+.link-wrapper div a:hover {
+  color: var(--bgOrange);
+  text-decoration: none;
+}
+
+.fa-brands {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 50px;
+}
+
+.icon {
+  color: white;
+}
+
+.icon-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactus {
+  margin-left: 150px;
+}

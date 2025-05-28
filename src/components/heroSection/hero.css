@@ -1,0 +1,131 @@
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
+}
+
+.btn-pink:hover {
+  color: #e84949;
+}
+
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+
+/* Hero Image scale  */
+.image-frame {
+  transition: all 1s;
+  filter: grayscale(0);
+  animation: scale-img linear 5s infinite;
+}
+
+@keyframes scale-img {
+  0% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+  25% {
+    filter: grayscale(0.5);
+    transform: scale(1.1);
+  }
+  50% {
+    filter: grayscale(0.3);
+    transform: scale(1.15);
+    box-shadow: 3px 3px 10px black;
+  }
+  75% {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px black;
+  }
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
+    box-shadow: 3px 3px 10px black;
+  }
+}
+
+/* Circle Image  */
+
+.circle-img {
+  animation: move infinite linear 4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(20px) translateY(-20px);
+  }
+}
+
+/* Dotes Image  */
+.dots-img {
+  animation: move-circle infinite linear 4s;
+}
+
+@keyframes move-circle {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+/* Zigzag Image  */
+.zigzags-img {
+  animation: move-zig infinite linear 4s;
+}
+
+@keyframes move-zig {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* Plus Image  */
+
+.plus-img {
+  animation: move-plus infinite linear 4s;
+}
+
+@keyframes move-plus {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+/* Cube Image  */
+
+.cube-img {
+  animation: move-cube infinite linear 4s;
+}
+
+@keyframes move-cube {
+  0% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-25px);
+  }
+  100% {
+    transform: rotateY(360deg) translateY(0px);
+  }
+}

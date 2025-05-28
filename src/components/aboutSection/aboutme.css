@@ -1,0 +1,14 @@
+.blobImg {
+  animation: move infinite 8s;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(50px) translateY(-60px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
