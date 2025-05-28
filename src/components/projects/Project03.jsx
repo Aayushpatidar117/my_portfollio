@@ -2,8 +2,6 @@ import React from "react";
 import "./project03.css";
 import cssImg from "../../assets/Images/stack/CSS.png";
 import HTMLImg from "../../assets/Images/stack/HTML.png";
-import ReactImg from "../../assets/Images/stack/React.png";
-import ReduxImg from "../../assets/Images/stack/Redux.svg";
 import TailwindImg from "../../assets/Images/stack/Tailwind.png";
 import JavaScriptImg from "../../assets/Images/stack/Javascript.svg";
 import gitImg from "../../assets/Images/stack/Git.svg";
