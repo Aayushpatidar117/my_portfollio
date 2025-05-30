@@ -27,75 +27,78 @@ const Project01 = () => {
       ></div>
       {/* <!-- Big Project Number (left side) --> */}
       <div
-        className="absolute right-[5px] top-[-30px] md:top-[-65px] md:text-[10rem] text-white text-[5rem] font-semibold 
+        className="absolute right-[2%] top-[-7%]  text-white text-[3rem] md:text-[8rem] font-semibold 
       opacity-0 z-10 group-hover:opacity-100"
       >
         01
       </div>
       {/* <!-- Project Content (right side) --> */}
-      <div
-        className="absolute h-[30%] md:h-[45%] w-[80%] md:bottom-[25%] md:left-[10%] bottom-[45%] left-[2%] text-white flex flex-col 
-        md:gap-[10px] pl-8 z-10 transition-all duration-1000 hover:scale-110 "
-      >
-        <div className="flex flex-wrap md-gap-2 gap-[10px] w-[70%]">
-          <img src={HTMLImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
-          <img src={cssImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
-          <img
-            src={JavaScriptImg}
-            className="md:w-10 md:h-10 w-[20px] h-[20px]"
-          />
-          <img src={ReactImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
-          <img src={ReduxImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
-          <img
-            src={TailwindImg}
-            className="md:w-10 md:h-10 w-[20px] h-[20px]"
-          />
+      <div>
+        <div
+          className="absolute h-[100%] w-[100%] justify-center text-white flex flex-col
+            pl-[7%] z-10 transition-all duration-1000 hover:scale-110"
+        >
+          <div className="flex flex-wrap justify-start items-center md:gap-3 gap-[10px] w-[100%]">
+            <img src={HTMLImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
+            <img src={cssImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
+            <img
+              src={JavaScriptImg}
+              className="md:w-10 md:h-10 w-[20px] h-[20px]"
+            />
+            <img src={ReactImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
+            <img src={ReduxImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
+            <img
+              src={TailwindImg}
+              className="md:w-10 md:h-10 w-[20px] h-[20px]"
+            />
 
-          <img src={gitImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
-          <img src={gitHubImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
-        </div>
+            <img src={gitImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
+            <img
+              src={gitHubImg}
+              className="md:w-10 md:h-10 w-[20px] h-[20px]"
+            />
+          </div>
 
-        {/* <!-- Heading --> */}
-        <h2 className="md:text-[50px] text-[20px] font-bold leading-[3rem]">
-          Top Cources
-        </h2>
+          {/* <!-- Heading --> */}
+          <h2 className="md:text-[3rem] text-[1rem] font-bold">Top Cources</h2>
 
-        <p className="w-[100%] md:text-[16px]  text-[10px] italic">
-          Top Courses is a responsive web app that showcases trending and
-          high-demand online courses across various domains.
-        </p>
+          <p className="w-[90%] md:text-[1rem] text-[0.6rem] italic">
+            Top Courses is a responsive web app that showcases trending...
+            {/* and high-demand online courses across various domains. */}
+          </p>
 
-        {/* <!-- Button Group --> */}
-        <div className="flex justify-start items-center gap-4 ">
-          <button
-            className="relative group bg-[#e84949] text-white font-medium border-2 border-[#e84949] 
-                       p-[5px] md:p-[15px] mt-4 overflow-hidden text-sm md:text-lg "
-          >
-            {/* Animated background on hover */}
-            <span
-              className="absolute inset-0 bg-black z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
-              aria-hidden="true"
-            ></span>
-
-            {/* Button text with color change on hover */}
-            <span className="relative z-10 flex justify-between items-center group-hover:text-[#e84949]">
-              <p>Read more</p>
-            </span>
-          </button>
-
-          <div className="flex justify-center mb-[-17px]  gap-[10px] items-center">
-            <a
-              href="https://github.com/Aayushpatidar117/TopCources_Project_in_React"
-              target="_blank"
+          {/* <!-- Button Group -->*/}
+          <div className="flex justify-start items-center gap-4  w-[50%] h-[25%] ">
+            <button
+              className="relative group w-[5rem] md:w-[7rem] bg-[#e84949] text-white font-medium border-2 border-[#e84949]
+                     overflow-hidden text-sm md:text-lg p-[2px] md:p-[10px] "
             >
-              <FaGithub className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
-            </a>
-            <a
-              href="https://top-cources-project-in-react.vercel.app/"
-              target="_blank"
-            >
-              <FaLink className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
-            </a>
+              {/* Animated background on hover */}
+              <span
+                className="absolute inset-0 bg-black z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
+                aria-hidden="true"
+              ></span>
+
+              {/* Button text with color change on hover */}
+              <span className="relative z-10 flex justify-center items-center group-hover:text-[#e84949]">
+                <p>{`Read more`}</p>
+              </span>
+            </button>
+
+            <div className="flex justify-center  gap-[10px]">
+              <a
+                href="https://github.com/Aayushpatidar117/TopCources_Project_in_React"
+                target="_blank"
+              >
+                <FaGithub className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
+              </a>
+              <a
+                href="https://top-cources-project-in-react.vercel.app/"
+                target="_blank"
+              >
+                <FaLink className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

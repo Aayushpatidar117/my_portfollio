@@ -15,7 +15,7 @@ const Project04 = () => {
     <div
       id="project04"
       className="relative w-[94%] bg-cover bg-center shadow-[-12px_12px_30px_#747272] group overflow-hidden
-              aspect-[19/9] ml-[37px] md:ml-[66px] "
+              aspect-[19/9] ml-[6%]"
     >
       {/* <!-- Overlay (after) --> */}
       <div className="absolute inset-0 bg-[#1f1f1f9a] z-0"></div>
@@ -28,7 +28,7 @@ const Project04 = () => {
 
       {/* <!-- Big Project Number (left side) --> */}
       <div
-        className="absolute left-[5px] top-[-30px] md:top-[-65px] md:text-[10rem] text-white text-[5rem] font-semibold 
+        className="absolute left-[2%] top-[-7%] md:text-[8rem] text-white text-[3rem] font-semibold 
             opacity-0 z-10 group-hover:opacity-100"
       >
         04
@@ -36,10 +36,10 @@ const Project04 = () => {
 
       {/* <!-- Project Content (right side) --> */}
       <div
-        className="absolute h-[30%] md:h-[45%] w-[80%] md:bottom-[25%] md:right-[-23%] bottom-[45%] right-[-17%] text-white flex flex-col 
-        md:gap-[10px] pl-8 z-10 transition-all duration-1000 hover:scale-110 "
+        className="absolute h-[100%] w-[100%] text-white flex flex-col justify-center 
+        md:gap-[10px] pl-[25%] md:pl-[50%] z-10 transition-all duration-1000 hover:scale-110 "
       >
-        <div className="flex flex-wrap md:gap-2 gap-[10px] w-[55%] md:w-[60%]">
+        <div className="flex flex-wrap gap-[0.6rem] w-[100%]">
           <img
             src={HTMLImg}
             alt=""
@@ -82,20 +82,18 @@ const Project04 = () => {
         </div>
 
         {/* <!-- Heading --> */}
-        <h2 className="md:text-[50px] text-[20px] font-bold leading-[3rem]">
-          Otter.ai UI
-        </h2>
+        <h2 className="md:text-[3rem] text-[1rem] font-bold">Otter.ai UI</h2>
 
-        <p className="w-[70%] text-[10px] md:text-[16px] italic">
-          A powerful Otter.ai UI clone that transcribes speech to text in real-time
-          using advanced voice recognition.
+        <p className="w-[90%] text-[0.6rem] md:text-[1rem] italic">
+          A powerful Otter.ai UI clone that transcribes speech...
+          {/*  to text in real-time using advanced voice recognition. */}
         </p>
 
         {/* <!-- Button Group --> */}
-        <div className="flex justify-start items-center gap-4 ">
+        <div className="flex justify-start items-center gap-4 w-[100%] h-[25%] ">
           <button
             className="relative group bg-[#e84949] text-white font-medium border-2 border-[#e84949] 
-                       p-[5px] md:p-[15px] mt-4 overflow-hidden text-sm md:text-lg "
+                       p-[2px] md:p-[10px]  overflow-hidden text-sm md:text-lg "
           >
             {/* Animated background on hover */}
             <span
@@ -109,15 +107,15 @@ const Project04 = () => {
             </span>
           </button>
 
-          <div className="flex justify-center mb-[-17px]  gap-[10px] items-center">
+          <div className="flex justify-center gap-[0.7rem] items-center">
             <a
               href="https://github.com/Aayushpatidar117/Otter.ai_UI_Clone"
               target="_blank"
             >
-              <FaGithub className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
+              <FaGithub className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>
             <a href="https://otter-ai-ui-clone.vercel.app/" target="_blank">
-              <FaLink className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
+              <FaLink className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>
           </div>
         </div>

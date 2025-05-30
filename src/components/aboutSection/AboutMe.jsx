@@ -23,7 +23,7 @@ import ExpressImg from "../../assets/Images/stack/Express.png";
 
 const AboutMe = () => {
   return (
-    <Box className="flex justify-center items-center flex-col md:flex-row md:gap-[20px] gap-[380px] mb-[100px] ">
+    <Box className="flex justify-center items-center flex-col md:flex-row md:gap-[20px] gap-[15rem] mb-[8rem] ">
       <Box className="w-[100%] md:w-[50%] text-start text-wrap">
         <div>
           <h1 className="text-[60px] font-medium text-[#e84949]">
@@ -71,9 +71,8 @@ const AboutMe = () => {
           </span>
         </div>
       </Box>
-      <Box className="w-[50%] mb-[180px] md:w-[50%] flex justify-center items-center relative">
+      <Box className="w-[100%] md:w-[50%] flex justify-center items-center relative">
         <img src={blobImg} className="absolute z-20 blobImg" />
-
         <div
           style={{
             display: "flex",

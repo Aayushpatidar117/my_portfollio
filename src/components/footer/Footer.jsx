@@ -5,16 +5,16 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-[-1px] py-20 bg-[#343d68]">
+    <footer className="relative py-[3.2rem] bg-[#343d68]">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between items-center px-5 gap-4">
           {/* Faded Text */}
-          <div className="absolute bottom-1 right-[30px] text-[5rem] text-[#535c87] select-none font-bold">
+          <div className="absolute bottom-1 right-[5%] text-[2rem] md:text-[5rem] text-[#535c87] select-none font-bold">
             Aayush Patidar
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-col gap-6 z-10 ml-[20px]">
+          <div className="flex flex-col gap-[0.7rem] md:gap-[1.7rem] z-10 ml-[2rem]">
             <div className="flex justify-start items-center gap-[20px]">
               <a
                 href="#project"
@@ -46,7 +46,7 @@ const Footer = () => {
                 className="flex justify-center items-center gap-[10px]"
               >
                 <FaLinkedin
-                  className="text-3xl text-white cursor-pointer hover:text-[#e84949] 
+                  className="md:text-3xl text-xl text-white cursor-pointer hover:text-[#e84949] 
                 transition-all duration-300 "
                 />
               </a>
@@ -56,17 +56,18 @@ const Footer = () => {
                 className="flex justify-center items-center gap-[10px] "
               >
                 <FaGithub
-                  className="text-3xl text-white cursor-pointer hover:text-[#e84949] 
+                  className="md:text-3xl text-xl text-white cursor-pointer hover:text-[#e84949] 
                 transition-all duration-300"
                 />
               </a>
-              <p className="text-2xl text-white hover:text-[#e84949] cursor-pointer transition-all duration-500">
+            </div>
+
+            <div className="flex justify-center items-center gap-[7px] group">
+              <HiOutlineMail className="md:text-3xl text-md text-white group-hover:text-[#e84949] cursor-pointer transition-all duration-500" />
+              <p className="text-md md:text-2xl text-white group-hover:text-[#e84949] cursor-pointer transition-all duration-500">
                 aayushpatidar@gmail.com
               </p>
             </div>
-            {/* <div className="flex justify-center items-center gap-[7px]">
-              <HiOutlineMail className="text-3xl text-white" />
-            </div> */}
           </div>
 
           {/* Social Icons */}

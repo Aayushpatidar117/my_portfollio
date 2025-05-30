@@ -12,7 +12,7 @@ const Project03 = () => {
   return (
     <div
       id="project03"
-      className="relative w-[94%] bg-cover bg-center shadow-[12px_12px_30px_#747272] group overflow-hidden
+      className="relative w-[94%]  bg-cover bg-center shadow-[12px_12px_30px_#747272] group overflow-hidden
       aspect-[19/9] "
     >
       {/* <!-- Overlay (after) --> */}
@@ -24,15 +24,15 @@ const Project03 = () => {
       ></div>
       {/* <!-- Big Project Number (left side) --> */}
       <div
-        className="absolute right-[5px] top-[-30px] md:top-[-65px] md:text-[10rem] text-white text-[5rem] font-semibold 
+        className="absolute right-[2%] top-[-7%] md:text-[8rem] text-white text-[3rem] font-semibold 
           opacity-0 z-10 group-hover:opacity-100"
       >
         03
       </div>
       {/* <!-- Project Content (right side) --> */}
       <div
-        className="absolute h-[30%] md:h-[45%] w-[80%] md:bottom-[25%] md:left-[10%] bottom-[45%] left-[2%] text-white flex flex-col 
-        md:gap-[10px] pl-8 z-10 transition-all duration-1000 hover:scale-110 "
+        className="absolute h-[100%] w-[100%] text-white flex flex-col justify-center
+        pl-[8%] z-10 transition-all duration-1000 hover:scale-110 "
       >
         <div className="flex flex-wrap md:gap-2 gap-[10px] w-[60%]">
           <img src={HTMLImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
@@ -50,20 +50,21 @@ const Project03 = () => {
         </div>
 
         {/* <!-- Heading --> */}
-        <h2 className="md:text-[50px] text-[20px] font-bold leading-[3rem]">
+        <h2 className="md:text-[3rem] text-[1rem] font-bold">
           Admin Dashboard
         </h2>
 
-        <p className="w-[70%] md:text-[16px] text-[10px] italic">
-          An interactive Admin Dashboard that provides real-time insights, user
-          management, and data analytics in a centralized interface.
+        <p className="w-[90%] md:text-[1rem] text-[0.6rem] italic">
+          An interactive Admin Dashboard that provides real-time insights,
+          user...
+          {/* management, and data analytics in a centralized interface. */}
         </p>
 
         {/* <!-- Button Group --> */}
-        <div className="flex justify-start items-center gap-4 ">
+        <div className="flex justify-start items-center gap-4 w-[100%] h-[20%]">
           <button
-            className="relative group bg-[#e84949] text-white font-medium border-2 border-[#e84949] 
-                     p-[5px] md:p-[15px] mt-4 overflow-hidden text-sm md:text-lg "
+            className="relative group w-[5rem] md:w-[7rem] bg-[#e84949] text-white font-medium border-2 border-[#e84949] 
+                     overflow-hidden text-sm md:text-lg flex justify-center items-center p-[2px] md:p-[10px] "
           >
             {/* Animated background on hover */}
             <span
@@ -77,15 +78,15 @@ const Project03 = () => {
             </span>
           </button>
 
-          <div className="flex justify-center mb-[-17px]  gap-[10px] items-center">
+          <div className="flex justify-center gap-[0.6rem] items-center">
             <a
               href="https://github.com/Aayushpatidar117/Dashboards"
               target="_blank"
             >
-              <FaGithub className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
+              <FaGithub className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>
             <a href="https://dashboards-rho-five.vercel.app/" target="_blank">
-              <FaLink className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
+              <FaLink className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>
           </div>
         </div>

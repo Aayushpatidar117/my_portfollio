@@ -26,17 +26,17 @@ const Project05 = () => {
       ></div>
       {/* <!-- Big Project Number (left side) --> */}
       <div
-        className="absolute right-[5px] top-[-30px] md:top-[-65px] md:text-[10rem] text-white text-[5rem] font-semibold 
+        className="absolute right-[2%] top-[-7%]  md:text-[8rem] text-white text-[3rem] font-semibold 
           opacity-0 z-10 group-hover:opacity-100"
       >
         05
       </div>
       {/* <!-- Project Content (right side) --> */}
       <div
-        className="absolute h-[30%] md:h-[45%] w-[80%] md:bottom-[25%] md:left-[10%] bottom-[45%] left-[2%] text-white flex flex-col 
-        md:gap-[10px] pl-8 z-10 transition-all duration-1000 hover:scale-110"
+        className="absolute h-[100%] w-[100%] text-white flex flex-col justify-center
+        md:gap-[10px] p-[7%] z-10 transition-all duration-1000 hover:scale-110"
       >
-        <div className="flex flex-wrap md-gap-2 gap-[10px] w-[60%]">
+        <div className="flex flex-wrap gap-[0.7rem] w-[100%]">
           <img src={HTMLImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
           <img src={cssImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
           <img src={ReactImg} className="md:w-10 md:h-10 w-[20px] h-[20px]" />
@@ -53,20 +53,18 @@ const Project05 = () => {
         </div>
 
         {/* <!-- Heading --> */}
-        <h2 className="md:text-[50px] text-[20px] font-bold leading-[3rem]">
-          Tour Planer
-        </h2>
+        <h2 className="md:text-[3rem] text-[1rem] font-bold">Tour Planer</h2>
 
-        <p className="w-[70%] md:text-[16px] text-[10px] italic">
-          ChatGPT said: A visually engaging Tour Planner App UI designed for
-          seamless travel planning.
+        <p className="w-[90%] md:text-[16px] text-[10px] italic">
+          ChatGPT said: A visually engaging Tour Planner App UI...
+          {/* designed for seamless travel planning. */}
         </p>
 
         {/* <!-- Button Group --> */}
-        <div className="flex justify-start items-center gap-4 ">
+        <div className="flex justify-start w-[100%] h-[30%] items-center gap-4 ">
           <button
-            className="relative group bg-[#e84949] text-white font-medium border-2 border-[#e84949] 
-                p-[5px] md:p-[15px] mt-4 overflow-hidden text-sm md:text-lg "
+            className="relative group bg-[#e84949] w-[5rem] md:w-[7rem] text-white font-medium border-2 border-[#e84949] 
+                p-[2px] md:p-[10px] overflow-hidden text-sm md:text-lg "
           >
             {/* Animated background on hover */}
             <span
@@ -80,15 +78,15 @@ const Project05 = () => {
             </span>
           </button>
 
-          <div className="flex justify-center mb-[-17px]  gap-[10px] items-center">
+          <div className="flex justify-center gap-[0.7rem] items-center">
             <a
               href="https://github.com/Aayushpatidar117/React-Tour_Planer"
               target="_blank"
             >
-              <FaGithub className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
+              <FaGithub className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>
             <a href="https://react-tour-planer.vercel.app/" target="_blank">
-              <FaLink className="text-[25px] md:text-[30px] hover:text-[#e84949]" />
+              <FaLink className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>
           </div>
         </div>
