@@ -27,7 +27,7 @@ const Project01 = () => {
       ></div>
       {/* <!-- Big Project Number (left side) --> */}
       <div
-        className="absolute right-[2%] top-[-7%]  text-white text-[3rem] md:text-[8rem] font-semibold 
+        className="absolute right-[2%] top-[-5%] md:-[-7%] text-white text-[3rem] md:text-[8rem] font-semibold 
       opacity-0 z-10 group-hover:opacity-100"
       >
         01
