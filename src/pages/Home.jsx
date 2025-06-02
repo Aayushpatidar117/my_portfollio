@@ -28,7 +28,7 @@ const Home = () => {
       </Box>
       <Box>
         <p
-          className="text-[#E7E7E7] text-[50px] bgcli md:text-[110px] font-medium mb-[-9px]
+          className="text-[#E7E7E7] text-[35px] bgcli md:text-[110px] font-medium mb-[-9px]
           select-none"
         >
           Aayush Patidar

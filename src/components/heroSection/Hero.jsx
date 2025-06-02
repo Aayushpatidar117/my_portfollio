@@ -113,29 +113,29 @@ const Hero = () => {
       <Box
         className={`image-container aspect-square ${
           phone
-            ? "w-[100%]"
+            ? "w-[100%] "
             : "w-[50%] h-[25em] flex justify-center items-center"
         }  p-[30px] `}
       >
         <Box
           className={`image-frame relative ${
             phone
-              ? "w-[70%] mx-auto p-[15px] md:p-[30px] mt-[20px]"
+              ? "w-[100%] mx-auto p-[17px] md:p-[30px]"
               : "w-[22.5em] h-[23.6em] flex justify-center items-center p-[1.87em]"
           }`}
         >
           <img src={heroImg} className="aspect-auto z-0" />
           <img
             src={circle}
-            className="w-[18px] md:w-[20px] circle-img left-[10px] bottom-[10px] absolute z-10 "
+            className="w-[15px] md:w-[20px] circle-img left-[10px] bottom-[10px] absolute z-10 "
           />
           <img
             src={dots}
-            className="w-[80px] md:w-[100px] dots-img right-[15px] bottom-[20px] absolute z-10"
+            className="w-[60px] md:w-[100px] dots-img right-[15px] bottom-[20px] absolute z-10"
           />
           <img
             src={zigzags}
-            className="w-[30px] md:w-[40px]  zigzags-img left-[10px] top-[10px] absolute z-10"
+            className="w-[20px] md:w-[40px]  zigzags-img left-[10px] top-[10px] absolute z-10"
           />
           <img
             src={plus}

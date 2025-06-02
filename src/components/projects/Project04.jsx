@@ -37,7 +37,7 @@ const Project04 = () => {
       {/* <!-- Project Content (right side) --> */}
       <div
         className="absolute h-[100%] w-[100%] text-white flex flex-col justify-center 
-        md:gap-[10px] pl-[25%] md:pl-[50%] z-10 transition-all duration-1000 hover:scale-110 "
+        md:gap-[10px] pl-[20%] md:pl-[50%] z-10 transition-all duration-1000 hover:scale-110 "
       >
         <div className="flex flex-wrap gap-[0.6rem] w-[100%]">
           <img

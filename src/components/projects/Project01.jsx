@@ -68,7 +68,7 @@ const Project01 = () => {
           </p>
 
           {/* <!-- Button Group -->*/}
-          <div className="flex justify-start items-center gap-4  w-[50%] h-[25%] ">
+          <div className="flex justify-start items-center gap-4  w-[100%] h-[17%] ">
             <button
               className="relative group w-[5rem] md:w-[7rem] bg-[#e84949] text-white font-medium border-2 border-[#e84949]
                      overflow-hidden text-sm md:text-lg p-[2px] md:p-[10px] "

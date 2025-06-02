@@ -39,24 +39,27 @@ const NavBar = () => {
             <p className="ml-[-18px] text-3xl">ayush Patidar</p>
           </Box>
           <Box className="flex justify-evenly items-center w-[40%]">
-            <p
+            <a
               className="cursor-pointer hover:scale-110 font-medium transition-transform
               duration-500 text-lg hover:text-[#e84949]"
+              href="#projects"
             >
               Projects
-            </p>
-            <p
+            </a>
+            <a
               className="cursor-pointer hover:scale-110 font-medium transition-transform
               duration-500 text-lg hover:text-[#e84949]"
+              href="#skills"
             >
               Skills
-            </p>
-            <p
+            </a>
+            <a
               className="cursor-pointer hover:scale-110 font-medium transition-transform
               duration-500 text-lg hover:text-[#e84949]"
+              href="#contact_me"
             >
               Contact Me
-            </p>
+            </a>
           </Box>
         </Box>
       )}
