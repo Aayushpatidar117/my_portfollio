@@ -48,7 +48,7 @@ const Hero = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/aayush_patidar_resume-0.5.pdf";
-    link.download = "Aayush_Patidar_Resume.pdf";
+    link.download = "aayush_patidar_resume-0.5.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
