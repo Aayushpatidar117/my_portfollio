@@ -9,6 +9,7 @@ import gitImg from "../../assets/Images/stack/Git.svg";
 import gitHubImg from "../../assets/Images/stack/Github.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
+import RedmoreBtn from "../buttons/RedmoreBtn";
 
 const Project05 = () => {
   return (
@@ -62,29 +63,10 @@ const Project05 = () => {
 
         {/* <!-- Button Group --> */}
         <div className="flex justify-start w-[100%] h-[30%] items-center gap-4 ">
-          <button
-            className="relative group bg-[#e84949] w-[5rem] md:w-[7rem] text-white font-medium border-2 border-[#e84949] 
-                p-[2px] md:p-[10px] overflow-hidden text-sm md:text-lg "
-          >
-            {/* Animated background on hover */}
-            <span
-              className="absolute inset-0 bg-black z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
-              aria-hidden="true"
-            ></span>
-
-            {/* Button text with color change on hover */}
-            <span className="relative z-10 flex justify-between items-center group-hover:text-[#e84949]">
-              <p>Read more</p>
-            </span>
-          </button>
-
+          <RedmoreBtn
+            gitHubLink={`https://github.com/Aayushpatidar117/React-Tour_Planer`}
+          />
           <div className="flex justify-center gap-[0.7rem] items-center">
-            <a
-              href="https://github.com/Aayushpatidar117/React-Tour_Planer"
-              target="_blank"
-            >
-              <FaGithub className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
-            </a>
             <a href="https://react-tour-planer.vercel.app/" target="_blank">
               <FaLink className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
             </a>

@@ -10,6 +10,7 @@ import JavaScriptImg from "../../assets/Images/stack/Javascript.svg";
 import gitImg from "../../assets/Images/stack/Git.svg";
 import gitHubImg from "../../assets/Images/stack/Github.svg";
 import { FaGithub, FaLink } from "react-icons/fa";
+import RedmoreBtn from "../buttons/RedmoreBtn";
 
 const Project01 = () => {
   return (
@@ -68,30 +69,12 @@ const Project01 = () => {
           </p>
 
           {/* <!-- Button Group -->*/}
-          <div className="flex justify-start items-center gap-4  w-[100%] h-[17%] ">
-            <button
-              className="relative group w-[5rem] md:w-[7rem] bg-[#e84949] text-white font-medium border-2 border-[#e84949]
-                     overflow-hidden text-sm md:text-lg p-[2px] md:p-[10px] "
-            >
-              {/* Animated background on hover */}
-              <span
-                className="absolute inset-0 bg-black z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
-                aria-hidden="true"
-              ></span>
-
-              {/* Button text with color change on hover */}
-              <span className="relative z-10 flex justify-center items-center group-hover:text-[#e84949]">
-                <p>{`Read more`}</p>
-              </span>
-            </button>
+          <div className="flex justify-start items-center gap-4  w-[100%] h-[22%] ">
+            <RedmoreBtn
+              gitHubLink={`https://github.com/Aayushpatidar117/TopCources_Project_in_React`}
+            />
 
             <div className="flex justify-center  gap-[10px]">
-              <a
-                href="https://github.com/Aayushpatidar117/TopCources_Project_in_React"
-                target="_blank"
-              >
-                <FaGithub className="text-[20px] md:text-[30px] hover:text-[#e84949]" />
-              </a>
               <a
                 href="https://top-cources-project-in-react.vercel.app/"
                 target="_blank"
