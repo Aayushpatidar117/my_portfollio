@@ -6,7 +6,7 @@ const ContactMe = () => {
   return (
     <div className="contact_me w-[100%] bg-[#E7E7E7] mb-[50px]">
       <h1
-        className="text-[30px] md:text-[90px] font-medium
+        className="text-[30px] md:text-[90px] font-medium 
         text-[#e84949] text-center p-[10px]"
       >
         Contact Me
