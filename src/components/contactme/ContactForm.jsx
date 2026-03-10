@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, TextField } from "@mui/material";
 import { LuSend } from "react-icons/lu";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,19 +20,7 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = () => {
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    const templateParams = {
-      form_name: formData.name,
-      form_email: formData.email,
-      form_subject: formData.subject,
-      form_message: formData.message,
-      time: new Date().toLocaleString(),
-    };
-
+  const handleSubmit = async () => {
     if (
       !formData.name ||
       !formData.email ||
@@ -43,25 +31,85 @@ const ContactForm = () => {
       return;
     }
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        toast.success("Email sent successfully!");
-        console.log("Email response:", response);
+    try {
+      const response = await fetch(
+        "https://services.leadconnectorhq.com/hooks/C5AyZuoj2lOZ75SNCnTJ/webhook-trigger/f8dfa65b-8031-4cf4-89ed-4ca1a99df0ab",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            time: new Date().toLocaleString(),
+          }),
+        },
+      );
 
-        // Clear form
+      if (response.ok) {
+        toast.success("Form submitted successfully!");
+
         setFormData({
           name: "",
           email: "",
           subject: "",
           message: "",
         });
-      })
-      .catch((error) => {
-        console.error("Email error:", error);
-        toast.error("Something went wrong!");
-      });
+      } else {
+        toast.error("Submission failed!");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Something went wrong!");
+    }
+    console.log("Webhook Payload: ", formData);
   };
+
+  // const handleSubmit = () => {
+  //   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  //   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  //   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  //   const templateParams = {
+  //     form_name: formData.name,
+  //     form_email: formData.email,
+  //     form_subject: formData.subject,
+  //     form_message: formData.message,
+  //     time: new Date().toLocaleString(),
+  //   };
+
+  //   if (
+  //     !formData.name ||
+  //     !formData.email ||
+  //     !formData.subject ||
+  //     !formData.message
+  //   ) {
+  //     toast.error("Please fill out all fields!");
+  //     return;
+  //   }
+
+  //   emailjs
+  //     .send(serviceId, templateId, templateParams, publicKey)
+  //     .then((response) => {
+  //       toast.success("Email sent successfully!");
+  //       console.log("Email response:", response);
+
+  //       // Clear form
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         subject: "",
+  //         message: "",
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.error("Email error:", error);
+  //       toast.error("Something went wrong!");
+  //     });
+  // };
 
   const customStyles = {
     "& .MuiOutlinedInput-root": {
