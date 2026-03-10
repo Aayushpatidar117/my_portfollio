@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "https://services.leadconnectorhq.com/hooks/C5AyZuoj2lOZ75SNCnTJ/webhook-trigger/f8dfa65b-8031-4cf4-89ed-4ca1a99df0ab",
+        "https://services.leadconnectorhq.com/hooks/C5AyZuoj2lOZ75SNCnTJ/webhook-trigger/223c4d19-8590-4652-b12e-0f0e58c2c548",
         {
           method: "POST",
           headers: {
