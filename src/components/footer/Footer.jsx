@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="flex justify-center items-center gap-[7px] group">
               <HiOutlineMail className="md:text-3xl text-md text-white group-hover:text-[#e84949] cursor-pointer transition-all duration-500" />
               <p className="text-md md:text-2xl text-white group-hover:text-[#e84949] cursor-pointer transition-all duration-500">
-                aayushpatidar@gmail.com
+                aayushpatidar6262@gmail.com
               </p>
             </div>
           </div>
